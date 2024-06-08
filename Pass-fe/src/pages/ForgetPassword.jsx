@@ -17,7 +17,7 @@ const ForgetPassword = () => {
         }),
         onSubmit: async (values) => {
             try {
-                const response = await axios.post('http://localhost:3000/api/forget-password', values);
+                const response = await axios.post('https://password-resetflow-x3zl.onrender.com/api/forget-password', values);
                 setMessage(response.data.message);
             } catch (error) {
                 setMessage(error.response.data.message);
