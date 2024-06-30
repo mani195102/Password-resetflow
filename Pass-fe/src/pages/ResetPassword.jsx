@@ -24,7 +24,7 @@ const ResetPassword = () => {
         }),
         onSubmit: async (values, { resetForm }) => {
             try {
-                const response = await axios.post(`https://password-resetflow-x3zl.onrender.com/api/reset_password/${token}`, { password: values.password });
+                const response = await axios.post(`https://password-resetflow-x3zl.onrender.com/api/reset_password/${token}`, values);
                 setMessage(response.data.message);
                 setOpen(true);
                 resetForm();
