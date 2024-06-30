@@ -36,7 +36,7 @@ const forgetPassword = async (req, res) => {
             subject: 'Password Reset',
             text: `You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n
                    Please click on the following link, or paste this into your browser to complete the process:\n\n
-                   http://localhost:5173/reset_password/${token}
+                   https://zen-passwordresetapp.netlify.app/reset_password/${token}
                    If you did not request this, please ignore this email and your password will remain unchanged.\n`,
         };
 
